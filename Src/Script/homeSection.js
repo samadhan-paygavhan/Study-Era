@@ -39,7 +39,7 @@ body.addEventListener("mouseenter", () => {
     if (!intervalId) { 
         intervalId = setInterval(() => {
             if(slideRight < slide) {
-                slider.style.transform = `translateX(-${slideRight*1100}px)`;
+                slider.style.transform = `translateX(-${slideRight*1200}px)`;
                 slider.style.transition = `transform 0.3s ease-in-out`;
                 slideRight++;
             } else {
@@ -64,7 +64,7 @@ body.addEventListener("mouseleave", () => {
 
 left.addEventListener("click", ()=> {
     if(slideLeft >= 1) {
-        slider.style.transform = `translateX(-${slideLeft*1100}px)`;
+        slider.style.transform = `translateX(-${slideLeft*1200}px)`;
         slideLeft--;
     } else {
         slider.style.transform = `translateX(0px)`;
@@ -74,7 +74,7 @@ left.addEventListener("click", ()=> {
 
 right.addEventListener("click", ()=> {
     if(slideRight < slide) {
-        slider.style.transform = `translateX(-${slideRight*1100}px)`;
+        slider.style.transform = `translateX(-${slideRight*1200}px)`;
         slideRight++;
     } else {
         slider.style.transform = `translateX(0px)`;
