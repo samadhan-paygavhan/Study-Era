@@ -4,10 +4,8 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color: #f4f7f6;
-    color: #333;
-
+html {
+    scroll-behavior: smooth;
 }
 
 header{
@@ -76,6 +74,17 @@ header{
     background-color: #e1e1e1;
 }
 
+@keyframes grow-underline {
+    50% { 
+        transform: scaleX(0); 
+    }
+    
+    100% {
+        transform: scaleX(1); 
+    }
+}
+    
+
 .navigation .login{
     height: 2.8rem;
     width: 7rem;
@@ -137,7 +146,7 @@ main {
 }
 
 
-main h1, h2, h3 {
+main h1, h3, .syllabus-section h2 {
     color: #1e3a8a;
     margin-top: 1em;
 }

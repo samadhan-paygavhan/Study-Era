@@ -74,6 +74,40 @@ header{
     background-color: #e1e1e1;
 }
 
+#homePage {
+    position: relative; 
+    display: inline-block; 
+    
+    text-decoration: none; 
+}
+
+#homePage::after {
+    content: ''; 
+    position: absolute;
+    bottom: -0.3rem;
+    left: 0;
+    right: 0;
+    
+    height: 3px;
+    background-color: #483D8B;
+    
+    transform: scaleX(0);
+    transform-origin: left;
+    
+    animation: grow-underline 2s linear 0s 1 normal forwards;
+}
+
+@keyframes grow-underline {
+    50% { 
+        transform: scaleX(0); 
+    }
+    
+    100% {
+        transform: scaleX(1); 
+    }
+}
+    
+
 .navigation .login{
     height: 2.8rem;
     width: 7rem;
@@ -371,7 +405,7 @@ header{
     display: none;
 }
 
-/*  */
+/* Company Trust */
 
 .trust-companies {
     height: 32vh;
