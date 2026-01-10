@@ -48,7 +48,7 @@ header{
 }
 
 .navigation .a {
-    height: 2.8rem;
+    height: 3rem;
     width: 4.5rem;
     background: transparent;
     border-radius: 0.375rem;
@@ -65,7 +65,7 @@ header{
     opacity: 0.8;
 }
 
-.navigation .teachSE{
+.navigation .myBatch{
     width: 6rem;
 }
 
@@ -84,9 +84,9 @@ header{
 #homePage::after {
     content: ''; 
     position: absolute;
-    bottom: -0.3rem;
-    left: 0;
-    right: 0;
+    bottom: 0rem;
+    left: -0.1rem;
+    right: -0.1rem;
     
     height: 3px;
     background-color: #483D8B;
