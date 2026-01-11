@@ -7,17 +7,21 @@
 header{
     width: 100%;
     padding: 1.25rem 6.25rem;
-    background-color: #fff;
     font-family: "Montserrat", sans-serif;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 99;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0,0,0,0.05);
 }
 
 .logo{
     font-size: 2rem;
-    color: #000;
+    color: #1A1939;
     user-select: none;
 }
 
@@ -25,6 +29,16 @@ header{
     border: 2px solid black;
     border-radius: 2rem;
     padding: 0.5rem 1rem;
+    background-color: #F1F4F9;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.searchInput:focus-within {
+    background-color: #FFFFFF;
+    border-color: #483D8B;
+    box-shadow: 0 0 0 4px rgba(72, 61, 139, 0.15);
 }
 
 .searchInput .searchLabel {
@@ -44,7 +58,7 @@ header{
 }
 
 .navigation .a {
-    height: 2.8rem;
+    height: 3rem;
     width: 4.5rem;
     background: transparent;
     border-radius: 0.375rem;
@@ -52,7 +66,6 @@ header{
     cursor: pointer;
     font-size: 1rem;
     color: #000;
-    background-color: #fff;
     border: none;
     font-weight: 500;
     margin-left: 0.8rem;
@@ -115,6 +128,10 @@ header{
 .navigation .signup:hover{
    opacity: 1;
    background-color: slateblue; 
+}
+
+.signup:active, .login:active {
+    transform: scale(0.95);
 }
 
 @media (max-width: 1499px) and (min-width: 1199px) {
