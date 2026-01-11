@@ -65,13 +65,18 @@ header{
     opacity: 0.8;
 }
 
-.navigation .myBatch{
-    width: 6rem;
-}
-
 .navigation .a:hover{
     color: #483D8B;
     background-color: #e1e1e1;
+}
+
+.navigation .myBatch{
+    width: 6rem;
+    display: none;
+}
+
+.navigation .teachOnStudyEra {
+    width: 10rem;
 }
 
 #homePage {
@@ -432,7 +437,7 @@ header{
 /* About Section Start */
 
 .about-section-container {
-    height: 100vh;
+    height: 75vh;
     padding: 60px 6rem;
     background-color: #EDF2F9;
     text-align: center;
