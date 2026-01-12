@@ -299,6 +299,7 @@ header{
 
 .teach-img:hover {
     box-shadow: 1px 13px 39px #483D8BA1;
+    transform: scale(0.96);
 }
 
 /* Mobile Adjustments */
