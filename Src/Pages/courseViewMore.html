@@ -21,22 +21,134 @@
     <header>
         <h2 class="logo">Study Era</h2>
 
-        <span class="searchInput">
-            <label for="search"><i class="fa-solid fa-magnifying-glass searchLabel"></i></label>
-            <input type="text" id="search" name="Search-Input" placeholder="Search for anything">
-        </span>
+        <div class="exploreAndSearch">
+            <button  class="explore button">Explore</button>
+            
+            <span class="searchInput">
+                <label for="search"><i class="fa-solid fa-magnifying-glass searchLabel"></i></label>
+                <input type="text" id="search" name="Search-Input" placeholder="Search for anything">
+            </span>
+        </div>
 
         <nav class="navigation">
-            <button onclick="window.location.href='homeSection.html'" class="a" id="homePage">Home</button>
-            <button  class="explore a">Explore</button>
-            <button onclick="window.location.href='myBatch.html'" class="a myBatch">My Batch</button>
-            <button onclick="window.location.href='teachOnStudyEra.html'" class="a teachOnStudyEra">Teach on Study-Era</button>
-            <button onclick="window.location.href='aboutUs.html'" class="a" id="aboutUs">About</button>
+            <button onclick="window.location.href='homeSection.html'" class="button" id="homePage">Home</button>
+            <button onclick="window.location.href='myBatch.html'" class="button myBatch">My Batch</button>
+            <button onclick="window.location.href='teachOnStudyEra.html'" class="button teachOnStudyEra" id="teachOnStudyEra">Teach on Study-Era</button>
+            <button onclick="window.location.href='aboutUs.html'" class="button" id="aboutUs">About</button>
             <button onclick="window.location.href='loginPage.html'" class="login">Login</button>
             <button onclick="window.location.href='signupPage.html'" class="signup">Sign up</button>
-
         </nav>
     </header>
+
+    <section>
+        <div class="exploreContainer">
+            <div class="mainExploreContainer">
+                <div class="courseExplore">
+                    <h3>Explore by Goal</h3>
+
+                    <div class="fullStackCourse courses">
+                        <button>Full Stack</button>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
+
+                    <div class="machineLearning courses">
+                        <button>Machine Learning</button>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
+
+                    <div class="dataScience courses">
+                        <button>Data Science</button>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
+
+                    <div class="cyberSecurity courses">
+                        <button>Cyber Security</button>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
+
+                    <div class="cloudComputing courses">
+                        <button>Cloud Computing</button>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
+
+                    <div class="UIUX courses">
+                        <button>UI/UX Design</button>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
+
+                    <div class="communicationSkill courses">
+                        <button>Communication Skill</button>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
+                </div>
+
+                <div class="subCourseTopicsExplore">
+                    <div class="fullStackTopics topics">
+                        <button>HTML, CSS and JS</button>
+                        <button>Modern Frontend</button>
+                        <button>Backend APIs</button>
+                        <button>Database Design</button>
+                        <button>Deployment (AWS/Netlify)</button>
+                        <button>Professional Git Workflow</button>
+                    </div>
+
+                    <div class="machineLearningTopics topics">
+                        <button>Python Fundamentals</button>
+                        <button>Supervised & Unsupervised</button>
+                        <button>Data Preparation</button>
+                        <button>Model Evaluation</button>
+                        <button>Deep Learning Basics</button>
+                        <button>Model Deployment</button>
+                    </div>
+
+                    <div class="dataScienceTopics topics">
+                        <button>Python</button>
+                        <button>Python Libraries</button>
+                        <button>Machine Learning</button>
+                        <button>Statistics</button>
+                        <button>Deep Learning</button>
+                        <button>Real Life Projects</button>
+                    </div>
+
+                    <div class="cyberSecurityTopics topics">
+                        <button>Network Security</button>
+                        <button>Ethical Hacking</button>
+                        <button>Vulnerability Assessment</button>
+                        <button>Cryptocurrency</button>
+                        <button>Penetration Testing</button>
+                        <button>Incident Response</button>
+                    </div>
+
+                    <div class="cloudComputingTopics topics">
+                        <button>AWS/Azure Fundamentals</button>
+                        <button>Virtual Machines</button>
+                        <button>Serverless Architectures</button>
+                        <button>Containerization</button>
+                        <button>Database Management</button>
+                        <button>Cloud Security Practices</button>
+                    </div>
+
+                    <div class="UIUxTopics topics">
+                        <button>Design Thinking</button>
+                        <button>Wireframing</button>
+                        <button>Information Architecture</button>
+                        <button>Product Roadmapping</button>
+                        <button>A/B Testing</button>
+                        <button>Market Research</button>
+                    </div>
+
+                    <div class="communicationSkillTopics topics">
+                        <button>Public Speaking</button>
+                        <button>Presentation Skills</button>
+                        <button>Social Media Communication</button>
+                        <button>Negotiation Skills</button>
+                        <button>Body Language & Gestures</button>
+                        <button>Practice Quiz</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Main Section Start -->
     <main>
@@ -97,7 +209,7 @@
                     </ul>
                 </div>
 
-                <div class="communicationSkill course">
+                <div class="machineLearning course">
                     <h5><a href="#">Machine Lerning</a></h5>
 
                     <ul>
@@ -123,7 +235,7 @@
                     </ul>
                 </div>
 
-                <div class="certification course">
+                <div class="cyberSecurity course">
                     <h5><a href="#">Cyber Security</a></h5>
 
                     <ul>
@@ -136,7 +248,7 @@
                     </ul>
                 </div>
 
-                <div class="webDevloper course">
+                <div class="cloudComputing course">
                     <h5><a href="#">Cloud Computing</a></h5>
 
                     <ul>
@@ -149,7 +261,7 @@
                     </ul>
                 </div>
 
-                <div class="dataScience course">
+                <div class="UIUX course">
                     <h5><a href="#">UI/UX & Product Mgmt</a></h5>
 
                     <ul>
@@ -231,5 +343,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="../Script/courseViewMore.js"></script>
 </body>
 </html>

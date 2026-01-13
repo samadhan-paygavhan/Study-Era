@@ -29,6 +29,92 @@ header{
     user-select: none;
 }
 
+.exploreAndSearch {
+    display: flex;
+    gap: 1rem;
+}
+
+.exploreContainer {
+    position: fixed;
+    height: 450px;
+    top: 1rem;
+    left: 285px;
+    display: none;
+    z-index: 11;
+}
+
+.mainExploreContainer {
+    margin-top: 4.57rem;
+    margin-left: 25px;
+    height: 360px;
+    width: 430px;
+    border: 2px solid black;
+    border-radius: 10px;
+    display: flex;
+}
+
+.mainExploreContainer .courseExplore {
+    flex: 1;
+    background-color: #eee;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    border-right: 1px solid black;
+    padding: 15px 0;
+}
+
+.mainExploreContainer .courseExplore h3 {
+    margin: 0 0 15px 15px;
+    font-weight: 530;
+}
+
+.mainExploreContainer .courseExplore .courses {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.mainExploreContainer .courseExplore .courses button {
+    width: 85%;
+    height: 37.5px;
+    padding: 0 15px;
+    border: none;
+    text-align: start;
+    background: transparent;
+}
+
+.mainExploreContainer .courseExplore .courses .fa-angle-right {
+    width: 12%;
+}
+
+.mainExploreContainer .courseExplore .courses:hover {
+    background-color: #cfcbeb;
+}
+
+.mainExploreContainer .subCourseTopicsExplore {
+    flex: 1;
+    background-color: #eee;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.mainExploreContainer .subCourseTopicsExplore .topics {
+    margin-bottom: 5px;
+}
+
+.mainExploreContainer .subCourseTopicsExplore .topics button {
+    width: 100%;
+    height: 37.5px;
+    padding: 0 15px;
+    border: none;
+    text-align: start;
+    background: transparent;
+}
+
+.machineLearningTopics, .dataScienceTopics, .cyberSecurityTopics,
+.cloudComputingTopics, .UIUxTopics, .communicationSkillTopics {
+    display: none;
+}
+
 .searchInput{
     border: 2px solid black;
     border-radius: 2rem;
@@ -66,7 +152,7 @@ header{
     align-items: center;
 }
 
-.navigation .a {
+.button {
     height: 3rem;
     width: 4.5rem;
     background: transparent;
@@ -83,12 +169,12 @@ header{
     opacity: 0.8;
 }
 
-.navigation .a:hover{
+.button:hover{
     color: #483D8B;
     background-color: #e1e1e1;
 }
 
-.navigation .a:active {
+.navigation .button:active {
     transform: scale(0.95);
 }
 
@@ -99,7 +185,7 @@ header{
 
 .navigation .teachOnStudyEra {
     width: 10rem;
-}    
+}
 
 .navigation .login{
     height: 2.8rem;
@@ -140,7 +226,7 @@ header{
 
 .navigation .signup:hover{
    opacity: 1;
-   background-color: slateblue; 
+   background-color: #6a5acd; 
 }
 
 .signup:active, .login:active {
@@ -161,17 +247,12 @@ header{
 
 /* Main Start */
 
-main {
-    margin: 50px;
-}
-
-
 main h1, h3, .syllabus-section h2 {
     color: #1e3a8a;
     margin-top: 1em;
 }
 
-section {
+main section {
     padding: 40px 5%;
     max-width: 1200px;
     margin: 0 auto;
