@@ -1,23 +1,57 @@
-// Explore button
 // When hover explore button the block show otherwise hide
 
 const exploreBtn = document.querySelector(".explore");
 const container = document.querySelector(".exploreContainer");
 
-// Show
-exploreBtn.addEventListener("mouseenter", () => {
+let closeTimer;
+
+// Function to Show
+const showContainer = () => {
+    clearTimeout(closeTimer); // Cancel any pending close
     container.style.display = "block";
-});
+};
 
-container.addEventListener("mouseenter", () => {
-    container.style.display = "block";
-});
+// Function to Hide (with delay)
+const hideContainer = () => {
+    closeTimer = setTimeout(() => {
+        container.style.display = "none";
+    }, 200);
+};
 
-// Hide
-container.addEventListener("mouseleave", () => {
-    container.style.display = "none";
-});
+// Event Listeners
+exploreBtn.addEventListener("mouseenter", showContainer);
+exploreBtn.addEventListener("mouseleave", hideContainer);
 
+container.addEventListener("mouseenter", showContainer);
+container.addEventListener("mouseleave", hideContainer);
+
+
+// When hover profile logo the profile container block show otherwise hide
+
+const profileLogo = document.querySelector(".profileSpan");
+const profileContainer = document.querySelector(".profileContainer");
+
+let closeTimerFor;
+
+// Function to Show
+const showProfileContainer = () => {
+    clearTimeout(closeTimer); // Cancel any pending close
+    profileContainer.style.display = "block";
+};
+
+// Function to Hide
+const hideProfileContainer = () => {
+    closeTimer = setTimeout(() => {
+        profileContainer.style.display = "none";
+    }, 200);
+};
+
+// Event Listeners
+profileLogo.addEventListener("mouseenter", showProfileContainer);
+profileLogo.addEventListener("mouseleave", hideProfileContainer);
+
+profileContainer.addEventListener("mouseenter", showProfileContainer);
+profileContainer.addEventListener("mouseleave", hideProfileContainer);
 
 // When we hover particular course their subtopics show inside the course block
 

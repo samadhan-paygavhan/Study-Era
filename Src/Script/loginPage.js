@@ -3,19 +3,28 @@
 const exploreBtn = document.querySelector(".explore");
 const container = document.querySelector(".exploreContainer");
 
-// Show
-exploreBtn.addEventListener("mouseenter", () => {
-    container.style.display = "block";
-});
+let closeTimer;
 
-container.addEventListener("mouseenter", () => {
+// Function to Show
+const showContainer = () => {
+    clearTimeout(closeTimer); // Cancel any pending close
     container.style.display = "block";
-});
+};
 
-// Hide
-container.addEventListener("mouseleave", () => {
-    container.style.display = "none";
-});
+// Function to Hide (with delay)
+const hideContainer = () => {
+    closeTimer = setTimeout(() => {
+        container.style.display = "none";
+    }, 200);
+};
+
+// Event Listeners
+exploreBtn.addEventListener("mouseenter", showContainer);
+exploreBtn.addEventListener("mouseleave", hideContainer);
+
+container.addEventListener("mouseenter", showContainer);
+container.addEventListener("mouseleave", hideContainer);
+
 
 
 // When we hover particular course their subtopics show inside the course block

@@ -19,10 +19,10 @@
 
     <!-- Header Section Start -->
     <header>
-        <h2 class="logo">Study Era</h2>
+        <h2 class="logo" onclick="window.location.href='homeSection.html'" style="cursor:pointer;">Study Era</h2>
 
         <div class="exploreAndSearch">
-            <button  class="explore button">Explore</button>
+            <button  class="explore button"><span>Explore</span></button>
             
             <span class="searchInput">
                 <label for="search"><i class="fa-solid fa-magnifying-glass searchLabel"></i></label>
@@ -31,12 +31,13 @@
         </div>
 
         <nav class="navigation">
-            <button onclick="window.location.href='homeSection.html'" class="button" id="homePage">Home</button>
-            <button onclick="window.location.href='myBatch.html'" class="button myBatch">My Batch</button>
-            <button onclick="window.location.href='teachOnStudyEra.html'" class="button teachOnStudyEra" id="teachOnStudyEra">Teach on Study-Era</button>
-            <button onclick="window.location.href='aboutUs.html'" class="button" id="aboutUs">About</button>
+            <button onclick="window.location.href='homeSection.html'" class="button" ><span id="homePage">Home</span></button>
+            <button onclick="window.location.href='myBatch.html'" class="button myBatch"><span id="myBatch">My Batch</span></button>
+            <button onclick="window.location.href='teachOnStudyEra.html'" class="button teachOnStudyEra"><span id="teachOnStudyEra">Teach on Study-Era</span></button>
+            <button onclick="window.location.href='aboutUs.html'" class="button"><span id="aboutUs">About</span></button>
             <button onclick="window.location.href='loginPage.html'" class="login">Login</button>
             <button onclick="window.location.href='signupPage.html'" class="signup">Sign up</button>
+            <span class="profileSpan"><i class="fa-regular fa-circle-user profile"></i></span>
         </nav>
     </header>
 
@@ -145,6 +146,37 @@
                         <button>Body Language & Gestures</button>
                         <button>Practice Quiz</button>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="profileContainer">
+            <div class="profile-header">
+                <div class="profile-avatar">
+                    <i class="fa-solid fa-user-astronaut"></i> 
+                </div>
+                <div class="userNameAndEmail">
+                    <h3>Samadhan Paygavhan</h3>
+                    <p>samadhanpaygavhan7@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="profile-menu-groups">
+                <div class="menu-group">
+                    <button><i class="fa-solid fa-book-open"></i> My Courses</button>
+                    <button><i class="fa-solid fa-chalkboard-user"></i> Teach on Study-Era</button>
+                    <button><i class="fa-solid fa-heart"></i> Wishlist</button>
+                </div>
+                
+                <div class="menu-group">
+                    <button><i class="fa-solid fa-gear"></i> Account Settings</button>
+                    <button><i class="fa-solid fa-circle-question"></i> Help Center</button>
+                </div>
+
+                <div class="logOut-section">
+                    <button class="logout-btn"><i class="fa-solid fa-right-from-bracket"></i> Log out</button>
                 </div>
             </div>
         </div>
@@ -320,8 +352,8 @@
                         <div class="student-info">
                             <img src="../Assets/Images/Student-Images/My Photo.jpg" alt="Student">
                             <div>
-                                <h4>Rahul Sharma</h4>
-                                <span>Software Engineer at Google</span>
+                                <h4>Samadhan Paygavhan</h4>
+                                <span>Software Engineer at TCS</span>
                             </div>
                         </div>
                     </div>
@@ -332,7 +364,19 @@
                         <div class="student-info">
                             <img src="../Assets/Images/Student-Images/My Photo.jpg" alt="Student">
                             <div>
-                                <h4>Priya Patel</h4>
+                                <h4>Nikhil Paighan</h4>
+                                <span>DEVOps Engineer</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                        <p>The instructors at Study-Era are industry experts. The project-based learning helped me build a portfolio that stood out.</p>
+                        <div class="student-info">
+                            <img src="../Assets/Images/Student-Images/My Photo.jpg" alt="Student">
+                            <div>
+                                <h4>Aniket Navpute</h4>
                                 <span>UI/UX Designer</span>
                             </div>
                         </div>
@@ -344,20 +388,8 @@
                         <div class="student-info">
                             <img src="../Assets/Images/Student-Images/My Photo.jpg" alt="Student">
                             <div>
-                                <h4>Priya Patel</h4>
-                                <span>UI/UX Designer</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="testimonial-card">
-                        <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
-                        <p>The instructors at Study-Era are industry experts. The project-based learning helped me build a portfolio that stood out.</p>
-                        <div class="student-info">
-                            <img src="../Assets/Images/Student-Images/My Photo.jpg" alt="Student">
-                            <div>
-                                <h4>Priya Patel</h4>
-                                <span>UI/UX Designer</span>
+                                <h4>Aditya Palodkar</h4>
+                                <span>Data Scientist</span>
                             </div>
                         </div>
                     </div>
